@@ -1,7 +1,7 @@
 body {
 	background-color: rgb(21,29,33);
 	color: white;
-	font-family: Consolas, monaco, monospace; font-size: 24px; 
+	font-family: 'Roboto', sans-serif; font-size: 24px; 
 	font-style: normal; font-variant: normal;
 	margin: 0;
 	padding: 0;
@@ -13,35 +13,104 @@ body {
 	-ms-user-select:none;
 }
 header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 100px;
 	background: black;
-	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
 }
-div {
-	background: red;
-	margin: auto;
-	width: 100px;
+
+header .logo button{
+
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-decoration: none;
+  float: left;
+	background: none;
+  border: none;
+ 	color: white;
 }
-ul {
-  list-style-type: none;
+header .logo button {
+
+}
+header nav {
+	float: right;
+}
+
+header nav ul {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: rgb(21,29,33);
+  display: flex;
 }
 
-li {
-  float: left;
+header nav ul li {
+  list-style: none;
 }
 
-li a {
-  display: block;
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
   color: white;
   text-align: center;
-  padding: 16px 16px;
+  padding: 0px 20px;
   text-decoration: none;
+  display: block;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+header nav ul li a:hover,
+header nav ul li a.active
+{
+  background-color: rgb(21,29,33);
+}
+
+.menu-toggle 
+{
+	float: right;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 991px) {
+	header {
+		padding: 0 20px;
+	}
+	.menu-toggle {
+		display: block;
+	}
+	header nav {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: black;
+		top: 50px;
+		left: -100%;
+		transition: 0.5s;
+	}
+	header nav.active {
+		left: 0;
+	}
+	header nav ul {
+		display: block;
+		text-align: center;
+	}
+	header nav ul li a {
+		border-bottom: 1px solid rgba(0,0,0,.2);
+	}
+}
+	section h1 {
+		margin-top: 100px;
+	}
+footer {
+	position: fixed; 
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	text-align: center;
 }
