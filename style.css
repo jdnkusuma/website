@@ -5,6 +5,7 @@ body {
 	font-style: normal; font-variant: normal;
 	margin: 0;
 	padding: 0;
+	height: 1000px;
 
 	user-select: none;
 	-webkit-user-select:none;
@@ -13,17 +14,30 @@ body {
 	-ms-user-select:none;
 }
 header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
+	width: 100%;
+	justify-content: space-between;
 	padding: 0 100px;
 	background: black;
-	width: 100%;
 	box-sizing: border-box;
+	transition: 0.6s;
+	z-index: 100000;
 }
 
-header .logo button{
+header.sticky {
+	padding: 5px 100px;
+	background: white;
+}
 
+header.sticky .logo button,
+header.sticky ul li a {
+	color: black;
+}
+
+header .logo button {
+	position: relative;
   height: 50px;
   line-height: 50px;
   font-size: 24px;
@@ -32,18 +46,20 @@ header .logo button{
 	background: none;
   border: none;
  	color: white;
+ 	transition: 0.6s;
 }
-header .logo button {
 
-}
 header nav {
 	float: right;
 }
 
 header nav ul {
+	position: relative;
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav ul li {
@@ -58,6 +74,7 @@ header nav ul li a {
   padding: 0px 20px;
   text-decoration: none;
   display: block;
+  transition: 0.6s;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -65,6 +82,7 @@ header nav ul li a:hover,
 header nav ul li a.active
 {
   background-color: rgb(21,29,33);
+  color: white;
 }
 
 .menu-toggle 
@@ -80,32 +98,47 @@ header nav ul li a.active
 	header {
 		padding: 0 20px;
 	}
+
 	.menu-toggle {
 		display: block;
 	}
+
 	header nav {
 		position: absolute;
-		width: 100%;
+		width: 50%;
 		height: calc(100vh - 50px);
-		background: black;
+		background: grey;
 		top: 50px;
 		left: -100%;
 		transition: 0.5s;
 	}
+
+	header.sticky #hamburger {
+		color: black;
+	}
+
 	header nav.active {
 		left: 0;
 	}
+
 	header nav ul {
 		display: block;
 		text-align: center;
 	}
+
 	header nav ul li a {
 		border-bottom: 1px solid rgba(0,0,0,.2);
 	}
 }
-	section h1 {
-		margin-top: 100px;
-	}
+
+section h1 {
+	margin-top: 100px;
+}
+
+#hamburger {
+	color: white;
+}
+
 footer {
 	position: fixed; 
 	left: 0;
