@@ -103,6 +103,12 @@ h1 {
 	font-size: 64px;
 }
 
+.ascii-art {
+		text-align: left;
+    font-family: monospace;
+    white-space: pre;
+}
+
 @media (max-width: 991px) {
 
 	h1 {
@@ -115,6 +121,12 @@ h1 {
 
 	.menu-toggle {
 		display: block;
+	}
+	.ascii-art {
+		font-size: 12px;
+		text-align: left;
+    font-family: monospace;
+    white-space: pre;
 	}
 
 	header nav {
@@ -170,11 +182,6 @@ section div {
 	color: white;
 }
 
-.ascii-art {
-		text-align: left;
-    font-family: monospace;
-    white-space: pre;
-}
 
 div p{
 	font-size: 12px;
