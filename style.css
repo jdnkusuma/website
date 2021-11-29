@@ -1,4 +1,5 @@
 body {
+	animation: 1s ease-out 0s 1 fadeIn;
 	background-color: rgb(21,29,33);
 	color: white;
 	font-family: 'Roboto', sans-serif; font-size: 24px; 
@@ -12,7 +13,47 @@ body {
 	-moz-user-select:none;
 	-ms-user-select:none;
 }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromUp {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromDown {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 header {
+	animation: 1s ease-out 0s 1 slideInFromUp;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -109,6 +150,17 @@ h1 {
     white-space: pre;
 }
 
+.title {
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+	width: 100%;
+	height: 100px;
+}
+
+.headerDiv 	{
+	width: 100%; 
+	height: 50px;
+}
+
 @media (max-width: 991px) {
 
 	h1 {
@@ -131,7 +183,7 @@ h1 {
 
 	header nav {
 		position: absolute;
-		width: 50%;
+		width: 100%;
 		height: calc(100vh - 50px);
 		background: black;
 		top: 50px;
@@ -189,6 +241,7 @@ div p{
 }
 
 footer {
+	animation: 1s ease-out 0s 1 slideInFromDown;
 	position: fixed; 
 	left: 0;
 	bottom: 0;
