@@ -53,7 +53,14 @@ body {
 	-webkit-touch-callout:none;
 	-moz-user-select:none;
 	-ms-user-select:none;
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+
 }
+	body::-webkit-scrollbar {
+	display: none;
+  }
 
 .container {
 	display: flex;
@@ -223,6 +230,10 @@ section div h1{
 	background-color: grey;
 	float: right;
 	display: block;
+}
+.aboutBox {
+	background-color: rgb(0, 0, 0);
+	padding: 10px;
 }
 
 footer {

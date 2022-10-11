@@ -45,23 +45,27 @@
 		<div class="introImageContainer">
 			<div class="sampleImage">insert image here</div>			
 		</div>
-
 	</section>
 	<section class="section" id="about" style="clear: both;">
 		<div>
-			<h1>About</h1>
+			<b>
+				<h1 style="font-size: 512px; margin-bottom: 0px;">
+					Hello. 
+				</h1>
+				<p>
+					This website was made by Jayden Kusuma, a software developer, and musician.
+				</p>
+			</b>			
 		</div>
-		<div>
-			<p>
-				Hi (sorry for bad english). 
-				This website was developed by Jayden, a fullstack developer (fullstack developers are backend developers who google every single thing about HTML and CSS) who made this website out of just HTML, CSS and Javascript, without CSS frameworks or JS frameworks. 
-				Why so? I have too much time so why not use it for something that's useless and doesn't help my life at all and it's just wasting my time. 
-				Anyway, i'm doing good. 
-				I am also a Unity game developer, and a C++ software developer(still learning the ropes). 
-				I am not much of a person who's good at making these types of long paragraph thingy so I already don't know what should be here. 
-				uhh I guess rather than spending another additional few words just for the sake of having a longer text for no-one ever to read (why are you reading this), I should get on with doing my science homework and go get myself a nice ham sandwich. 
-				Anyway, enjoy looking at this shitty website and hopefully you can find something better to do.
-			</p>
+		<div class="aboutBox">
+				<h1>About Me</h1>
+				<p>
+					Name: Jayden Kusuma <br>
+					Date of Birth: February 1st 2008 <br>
+					Abilities: Drum, Piano, Guitar, Bass, and software development <br>
+					Best at the electric guitar <br>
+					Certificates: <br> <div style="  margin: auto; width: 640px;"><embed src="Certificates.pdf" width="600px" height="680px"/></div>
+				</p>
 		</div>
 	</section>
 	<section class="section" id="contact">
@@ -70,7 +74,7 @@
 		</div>
 		<div>
 			<p>
-				How to contact me? It's simple, don't contact me (there is a good chance that someone needs something from me when someone contact me). Or, if it's a social call, go ahead and send me a message. The fact that you have access to this website is good enough as a proof that you know how to contact me.
+				Email me at jdnkusuma@gmail.com
 			</p>
 		</div>
 	</section>
@@ -95,7 +99,7 @@
 
 		window.addEventListener("scroll", function() {
 			var body = document.querySelector("body");
-			body.classList.toggle("aboutPage", window.scrollY > 500)
+			body.classList.toggle("aboutPage", window.scrollY > 250)
 		})
 
 		function scroll(element){   
