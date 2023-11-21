@@ -1,0 +1,12 @@
+.DS_Store
+
+.Spotlight_V100
+.Trashes
+
+.config
+
+build/
+
+*.log
+*.tmp
+
