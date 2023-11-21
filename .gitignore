@@ -9,4 +9,8 @@ build/
 
 *.log
 *.tmp
+*.pbxproj
+*.plist
+*.xcuserstate
+*.xcworkspacedata
 
