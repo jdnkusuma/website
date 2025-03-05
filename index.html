@@ -10,16 +10,17 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Jayden</title>
 </head>
 <body class="container">
 	<header>
+		<div class="header-title">jaykus</div>
 		<nav>
 			<ul>
-				<li><div class="active"><a href="">Home</a></div></li>
-				<li><div><a href="#about">About</a></div></li>
-				<li><div><a href="#contact">Contact</a></div></li>
+				<li><div class="active"><a href="">home</a></div></li>
+				<li><div><a href="#about">about</a></div></li>
+				<li><div><a href="#contact">contact</a></div></li>
 			</ul>
 		</nav>
 		<div class="menu-toggle">
@@ -30,20 +31,14 @@
 	<section>
 		<div class="section" id="intro">
 			<div>
-				<h1>Welcome</h1>
+				<h1 class="home-title">I am a terrible musician</h1>
 			</div>
 			<div>
-				<p>
-					This is the website of a software developer who doesn't know exactly how to make front ends for a website. 
-					To learn more about the said software developer, click below.
-				</p>
+				<p>Now, I make websites (also suck at that)</p>
 			</div>
 			<div class="navButton">
 				<a href="#about" >Learn More</a>
 			</div>			
-		</div>
-		<div class="introImageContainer">
-			<div class="sampleImage">insert image here</div>			
 		</div>
 	</section>
 	<section class="section" id="about" style="clear: both;">
@@ -82,9 +77,6 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script async src="https://instagram.com/static/bundles/es6/EmbedSDK.js/47c7ec92d91e.js"></script>
 	<script type="text/javascript">
-		function pressName() {
-			alert("Jayden is the name of the developer");
-		}
 		$(document).ready(function(){
 			$('.menu-toggle').click(function(){
 				$('nav').toggleClass('active')

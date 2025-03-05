@@ -6,7 +6,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes slideInFromUp {
   0% {
     transform: translateY(-100%);
@@ -15,7 +14,6 @@
     transform: translateY(0);
   }
 }
-
 @keyframes slideInFromDown {
   0% {
     transform: translateY(100%);
@@ -24,7 +22,6 @@
     transform: translateY(0);
   }
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -33,16 +30,15 @@
     opacity: 1;
   }
 }
-
 html {
 	scroll-behavior: smooth;
 }
 
 body {
 	animation: 1s ease-out 0s 1 fadeIn;
-	background-color: rgb(255, 198, 0);
-	color: rgb(88, 0, 255);
-	font-family: 'Roboto', sans-serif; font-size: 24px; 
+	background-color: #433878;
+	color: #FFE1FF;
+	font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 600;
 	font-style: normal; font-variant: normal;
 	margin: 0;
 	padding: 0;
@@ -66,35 +62,55 @@ body {
 }
 
 .aboutPage {
-	background-color: rgb(233, 0, 255);
-	color: rgb(255, 198, 0);
+	background-color: #E4B1F0;
+	color: #7E60BF;
 	transition: 0.6s;
 }
 
 header {
 	animation: 1s ease-out 0s 1 slideInFromUp;
 	width: 100%;
-	height: 120px;
-	padding: 10px;
+	height: 96px;
+	padding: 10px 50px;
 	top: 0;
-	left: 0;
+	right: 0;
 	position: fixed;
-	background-color: rgb(233, 0, 255);
+	background-color: #7E60BF;
 	box-sizing: border-box;
 	transition: 0.5s;
 	z-index: 100000;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-title {
+	font-size: 36px;
+	font-weight: 600;
+	color: #FFE1FF;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
 .headerCollider {
 	width: 100%;
-	height: 120px;
+	height: 96px;
 }
 
 header.sticky {
 	height: 75px;
-	background: rgb(88, 0, 255);
+	background: #7E60BF;
 	color: rgb(0, 0, 0);
 }
 
@@ -103,7 +119,7 @@ header.sticky ul li div {
 }
 
 .menu-toggle {
-	float: right;
+	float: left;
 	font-size: 32px;
 	margin-left: 10px;
 	cursor: pointer;
@@ -111,7 +127,7 @@ header.sticky ul li div {
 }
 
 header nav {
-	float: left;
+	float: right;
 }
 
 header nav ul {
@@ -139,47 +155,38 @@ header nav ul li div {
 
 header nav ul li div a {
 	text-decoration: none;
-	color: rgb(88, 0, 255);
+	color: #FFE1FF;
 	transition: 0.6s;
 }
 
-header nav ul li div:hover,
-header nav ul li div.active {
-	background-color: rgb(88, 0, 255);
+header nav ul li div:hover {
+	background-color: #E4B1F0;
 }
 
-header nav ul li div:hover a,
-header nav ul li div.active a{
-	color:rgb(255, 198, 0);
+header nav ul li div:hover a{
+	color: #7E60BF;
 	transition: 0.6s;
 }
 
 header.sticky nav ul li div a {
-	color: rgb(255, 198, 0);
+	color: #E4B1F0;
 }
 
-header.sticky nav ul li div:hover,
-header.sticky nav ul li div.active {
-	background-color:rgb(255, 198, 0);
+header.sticky nav ul li div:hover{
+	background-color: #FFE1FF;
 }
 
-header.sticky nav ul li div:hover a,
-header.sticky nav ul li div.active a {
-	color: rgb(88, 0, 255);
+header.sticky nav ul li div:hover a{
+	color: #433878;
 }
 section {
-	width: 100% - 10px;
-	height: auto;
-	padding: 50px 50px;
-}
-section div.section {
-	width: 50%;
-	float: left;
+	padding: 0px 50px;
 }
 
-#about {
-	margin-top: 200px;
-	margin-bottom: 200px;
+.home-title {
+	font-size: 8rem; 
+	font-weight: 700;
+	line-height: 75%;
 }
 
 #contact {
@@ -193,25 +200,27 @@ section div h1{
 }
 
 .navButton {
-	width: 120px;
-	color: black;
-	background-color: rgb(88, 0, 255);
+	width: 9rem;
+	color: #FFE1FF;
+	background-color: #7E60BF;
 	border-radius: 10px;
 	border: none;
 	margin: 10px 0px;
 	padding: 10px;
 	transition: 0.6s;
+	align-items: center;
+	text-align: center;
 }
 
 .navButton:hover {
-	color: rgb(88, 0, 255);
-	background-color: rgb(233, 0, 255);
+	color: #7E60BF;
+	background-color: #FFE1FF;
 	transition: 0.6s;
 }
 
 .navButton a {
 	text-decoration: none;
-	color: rgb(233, 0, 255);
+	color: #FFE1FF;
 	transition: 0.6s;
 }
 
@@ -221,40 +230,23 @@ section div h1{
 	transition: 0.6s;
 }
 
-.sampleImage {
-	width: 35%;
-	height: 500px;
-	background-color: grey;
-	float: right;
-	display: block;
-}
 .aboutBox {
-	background-color: rgb(0, 0, 0);
+	background-color: #7E60BF;
+	color: #FFE1FF;
 	padding: 10px;
-}
-
-#pdfviewer {
-	width: 100%;
-	height: 100%;
-}
-#youtubeEmbed {
-	margin: auto; 
-	width: 100%; 
-	height: 100vh;
 }
 
 footer {
 	width: 100%;
 	height: 100px;
-	background-color: black;
-	color: rgb(255, 198, 0);
+	background-color: #433878;
+	color: #E4B1F0;
 	margin-top: auto;
 }
 @media (max-width: 600px) {
 	.menu-toggle {
 		display: block;
 	}
-
 	header nav {
 		position: absolute;
 		width: 100vw;
@@ -264,37 +256,30 @@ footer {
 		left: -100%;
 		transition: 0.5s;
 	}
-
 	header nav.active {
 		left: 0;
 	}
-
 	header nav ul {
 		display: block;
 		text-align: center;
 	}
-
 	header nav ul li a {
 		border-bottom: 1px solid rgba(0,0,0,.2);
 	}
 	header nav.active ul li a {
 		padding: 10px 40%;
 	}
-
 	header nav ul li div a{
 		color: rgb(255, 198, 0);
 	}
-
 	header nav ul li div:hover,
 	header nav ul li div.active {
 		background-color: rgb(255, 198, 0);
 	}
-
 	header nav ul li div:hover a,
 	header nav ul li div.active a{
 		color: rgb(233, 0, 255);
 	}
-
 	header.sticky nav {
 		height: calc(100vh - 70px);
 		background: rgb(255, 198, 0);
@@ -302,47 +287,26 @@ footer {
 		left: -100%;
 		transition: 0.5s;
 	}
-
 	header.sticky nav.active {
 		left: 0px;
 	}
-
 	header.sticky nav ul li div,
 	header.sticky nav ul li div {
 		background-color: rgb(88, 0, 255);
 	}
-
 	header.sticky nav ul li div:hover,
 	header.sticky nav ul li div.active {
 		background-color: rgb(233, 0, 255);
 	}
-
 	header.sticky nav ul li div a, 
 	header.sticky nav ul li div a {
 		color: rgb(255, 198, 0);
 	}
-
 	header.sticky nav ul li div:hover a,
 	header.sticky nav ul li div.active a {
 		color: rgb(255, 198, 0);
 	}
-
 	section div.section {
 		width: 100%;
-	}
-	.sampleImage {
-		display: none;
-	}
-	#biodata {
-		font-size: 5vw;
-	}
-	#pdfviewer{
-		width: 100%; 
-		height: 100%;
-	}
-	#youtubeEmbed {
-		margin: auto; 
-		width: 100%; 
-		height: 25vh;
 	}
 }
