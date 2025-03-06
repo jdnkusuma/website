@@ -19,7 +19,7 @@
 		<nav>
 			<ul>
 				<li><div class="active"><a href="">home</a></div></li>
-				<li><div><a href="#about">about</a></div></li>
+				<li><div><a href="#intro">about</a></div></li>
 				<li><div><a href="#contact">contact</a></div></li>
 			</ul>
 		</nav>
@@ -29,35 +29,39 @@
 	</header>
 	<div class="headerCollider"></div>
 	<section>
-		<div class="section" id="intro">
+		<div class="section" id="home">
 			<div>
 				<h1 class="home-title">I am a terrible musician</h1>
 			</div>
 			<div>
-				<p>Now, I make websites (also suck at that)</p>
+				<p>I decided to migrate towards software development (even worse at that)</p>
 			</div>
-			<div class="navButton">
-				<a href="#about" >Learn More</a>
-			</div>			
+			<button class="navButton" onclick="location.href='#intro'">learn more</button>			
 		</div>
 	</section>
-	<section class="section" id="about" style="clear: both;">
+	<section class="section" id="intro" style="clear: both;">
 		<div>
-			<b>
-				<h1 style="font-size: 25vw; margin-bottom: 0px;">
-					Hello. 
-				</h1>
-				<p>
-					This website was made by Jayden Kusuma, a software developer, and musician. idk what else to put here so yeah i'll leave this be
-				</p>
-			</b>			
+			<h1 style="font-size: 12vw; font-weight: 700; margin-bottom: 0px;">
+				Hi.
+			</h1>
+			<p>
+				I'm Jayden, so nice of you to actually scroll this far down.
+			</p>	
+			<button class="navButton" onclick="location.href='#about'">keep scrolling</button>				
 		</div>
-		<div class="aboutBox">
-				<h1>About Me</h1>
-				<p id="biodata">
-					Jayden Kusuma <br>
-					Not a crackhead or anything that's bad, i'm a kid who's just trying to look cool by playing music and doing computer stuffs.
+	</section>
+	<section>
+		<div class="section" id="about">
+			<div>
+				<h1 style="font-size: 12vw; font-weight: 700;">about</h1>
+			</div>
+			<div>
+				<p>
+					I'm a high-school student, software developer and musician based in Jakarta, Indonesia. <br>
+					I have created video game prototypes on itch.io (i have zero art skills), developed this webpage, and am currently studying Flutter app development.<br>
+					This website is built using pure HTML and CSS, without any CSS or JavaScript frameworks. <br><br>
 				</p>
+			</div>
 		</div>
 	</section>
 	<section class="section" id="contact">
@@ -71,7 +75,7 @@
 		</div>
 	</section>
 	<footer>
-		<p>this is a footer, lorem ipsum dolor sit amet idk what goes next</p>
+		<p>footer</p>
 	</footer>
 	<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>

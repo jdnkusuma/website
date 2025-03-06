@@ -60,17 +60,15 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 }
-
-.aboutPage {
-	background-color: #E4B1F0;
-	color: #7E60BF;
-	transition: 0.6s;
+h1, p {
+	padding: 0;
+	margin: 0;
 }
 
 header {
 	animation: 1s ease-out 0s 1 slideInFromUp;
 	width: 100%;
-	height: 96px;
+	height: 10vh;
 	padding: 10px 50px;
 	top: 0;
 	right: 0;
@@ -105,17 +103,7 @@ header nav ul {
 
 .headerCollider {
 	width: 100%;
-	height: 96px;
-}
-
-header.sticky {
-	height: 75px;
-	background: #7E60BF;
-	color: rgb(0, 0, 0);
-}
-
-header.sticky ul li div {
-	color: rgb(255, 198, 0);
+	height: 10vh;
 }
 
 .menu-toggle {
@@ -167,26 +155,42 @@ header nav ul li div:hover a{
 	color: #7E60BF;
 	transition: 0.6s;
 }
-
+header.sticky {
+	height: 75px;
+	background: #433878;
+	color: #E4B1F0;
+}
+header.sticky .header-title {
+	font-weight: 600;
+	color: #E4B1F0;
+	transition: 0.6s;
+}
 header.sticky nav ul li div a {
 	color: #E4B1F0;
 }
-
 header.sticky nav ul li div:hover{
 	background-color: #FFE1FF;
 }
-
 header.sticky nav ul li div:hover a{
 	color: #433878;
 }
 section {
+	height: 90vh;
 	padding: 0px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Centers content vertically */
+	padding: 0px 4vw;
 }
 
 .home-title {
-	font-size: 8rem; 
+	font-size: 12vw; 
 	font-weight: 700;
 	line-height: 75%;
+}
+
+section div div p {
+	font-size: 2vw;
 }
 
 #contact {
@@ -200,89 +204,98 @@ section div h1{
 }
 
 .navButton {
-	width: 9rem;
+	width: auto;
 	color: #FFE1FF;
 	background-color: #7E60BF;
 	border-radius: 10px;
 	border: none;
 	margin: 10px 0px;
-	padding: 10px;
+	padding: 4vh;
 	transition: 0.6s;
+	display: flex;
 	align-items: center;
+	justify-content: center;
 	text-align: center;
+
+	font-family: 'Montserrat', sans-serif; font-weight: 600;
+	font-size: 2vw;
+	text-decoration: none;
+	color: #FFE1FF;
+	transition: 0.6s;
 }
 
 .navButton:hover {
 	color: #7E60BF;
 	background-color: #FFE1FF;
-	transition: 0.6s;
-}
-
-.navButton a {
 	text-decoration: none;
-	color: #FFE1FF;
+	color: #433878;
 	transition: 0.6s;
 }
 
-.navButton a:hover {
-	text-decoration: none;
-	color: rgb(88, 0, 255);
+.aboutPage {
+	background-color: #E4B1F0;
+	color: #7E60BF;
 	transition: 0.6s;
-}
-
-.aboutBox {
-	background-color: #7E60BF;
-	color: #FFE1FF;
-	padding: 10px;
 }
 
 footer {
 	width: 100%;
-	height: 100px;
+	height: 10vh;
 	background-color: #433878;
 	color: #E4B1F0;
 	margin-top: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
+
 @media (max-width: 600px) {
+	header {
+		height: 10vh;
+	}
+	.header-title{
+		font-size: 24px;
+	}
 	.menu-toggle {
 		display: block;
 	}
 	header nav {
 		position: absolute;
 		width: 100vw;
-		height: calc(100vh - 120px);
-		background: rgb(88, 0, 255);
-		top: 120px;
-		left: -100%;
+		height: 90vh;
+		background: #E4B1F0;
+		top: 10vh;
+		right: -100%;
 		transition: 0.5s;
 	}
 	header nav.active {
-		left: 0;
+		right: 0;
 	}
 	header nav ul {
 		display: block;
-		text-align: center;
+		text-align: left;
+		width: 100%
 	}
-	header nav ul li a {
-		border-bottom: 1px solid rgba(0,0,0,.2);
+	header nav ul li a { 
+		border-bottom: 2px solid rgba(67, 56, 120, 0.2);
 	}
 	header nav.active ul li a {
 		padding: 10px 40%;
 	}
 	header nav ul li div a{
-		color: rgb(255, 198, 0);
+		color: rgb(67, 56, 120);
 	}
 	header nav ul li div:hover,
 	header nav ul li div.active {
-		background-color: rgb(255, 198, 0);
+		background-color: #7E60BF;
 	}
 	header nav ul li div:hover a,
 	header nav ul li div.active a{
-		color: rgb(233, 0, 255);
+		color: #FFE1FF;
 	}
 	header.sticky nav {
 		height: calc(100vh - 70px);
-		background: rgb(255, 198, 0);
+		background: #7E60BF;
 		top: 75px;
 		left: -100%;
 		transition: 0.5s;
@@ -292,21 +305,34 @@ footer {
 	}
 	header.sticky nav ul li div,
 	header.sticky nav ul li div {
-		background-color: rgb(88, 0, 255);
+		background-color: #7E60BF;
 	}
 	header.sticky nav ul li div:hover,
 	header.sticky nav ul li div.active {
-		background-color: rgb(233, 0, 255);
+		background-color: #E4B1F0
 	}
 	header.sticky nav ul li div a, 
 	header.sticky nav ul li div a {
-		color: rgb(255, 198, 0);
+		color: #E4B1F0;
 	}
 	header.sticky nav ul li div:hover a,
 	header.sticky nav ul li div.active a {
-		color: rgb(255, 198, 0);
+		color: #433878;
 	}
 	section div.section {
 		width: 100%;
+	}
+	.home-title {
+		font-size: 18vw; 
+		font-weight: 700;
+		line-height: 90%;
+	}
+	section div div p {
+		font-size: 4vw;
+	}
+	.navButton {
+		width: 100%;
+		height: 6vw;
+		font-size: 4vw;
 	}
 }
