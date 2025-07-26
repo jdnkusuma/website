@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "jaykus - personal website",
@@ -32,6 +30,10 @@ export const metadata: Metadata = {
     images: ["https://media.licdn.com/dms/image/v2/D5616AQFmb6XykQhH-g/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1738745241361?e=1751500800&v=beta&t=zZmZW1a5KdJ3XAdvB2UpQ0Jj65uiIJ-H63P_DtWyXL0"], // Replace with your actual Twitter image URL
   },
 };
+export const googleSiteVerification = {
+  name: "google-site-verification",
+  content: "google-site-verification=QK2YvKvDNfZ0lHlKjOPPvbL33Bxhde-70Z-XqMe66O8", // <-- Replace with your code
+};
 
 export default function RootLayout({
   children,
@@ -45,8 +47,6 @@ export default function RootLayout({
         {children}
         <Footer/>
       </body>
-      <Analytics/>
-      <SpeedInsights/>
     </html>
   );
 }

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jdnkusuma.vercel.app
+
+# Sitemaps
+Sitemap: https://jdnkusuma.vercel.app/sitemap.xml
