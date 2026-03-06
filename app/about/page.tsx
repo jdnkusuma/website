@@ -19,7 +19,7 @@ export default function About() {
                     <div className="w-12 h-12 rounded-full bg-mid flex items-center justify-center">
                         <Code2 size={24} />
                     </div>
-                    <span className="uppercase tracking-[0.3em] text-sm text-mid font-bold">The Engineer</span>
+                    <span className="uppercase tracking-[0.3em] text-sm text-mid font-bold">The Software Engineer</span>
                 </div>
                 <div className="md:col-span-8 text-xl md:text-3xl font-light space-y-10 leading-relaxed">
                     <p>
@@ -45,10 +45,10 @@ export default function About() {
                     <div className="grid md:grid-cols-2 gap-16 items-start">
                         <div className="space-y-8 text-lg md:text-2xl font-medium">
                             <p>
-                                I play guitar, bass, piano, and drums. I am a decent instrumentalist with <span className="underline decoration-mid decoration-4 text-mid">little musical creativity</span>. I transcribe and arrange while working on creating &quot;listenable&quot; music.
+                                I play guitar, bass, piano, and drums. I am a decent instrumentalist with <span className="underline decoration-mid decoration-4 text-mid">little musical creativity</span>, which is why I resort to transcribing and arranging existing music.
                             </p>
                             <p className="text-base md:text-xl opacity-70 font-normal">
-                                I avoid polluting the internet with my visual appearance. I will create more content once I look tolerable.
+                                I post music content online on my social media platforms.
                             </p>
                         </div>
 
@@ -63,8 +63,8 @@ export default function About() {
                                 As the heir to Hiendguitar, I have unlimited access to the local music industry and the top guitars ever made. 
                             </p>
                             <p className="text-sm font-bold border-t border-light/20 pt-6 text-semilight">
-                                Criticize my skills all you like, but 99% of you will never hold the instruments I do. 
-                                <span className="block mt-2 text-white italic">If you hate the guitars, you&apos;re simply too poor.</span>
+                                I have ALL the hi end guitars I could ever need, so trust me that whatever guitar I use has got to be the best.
+                                <span className="block mt-2 text-white italic">Yeah, be jealous of me</span>
                             </p>
                         </div>
                     </div>
