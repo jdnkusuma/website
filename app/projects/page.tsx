@@ -1,17 +1,10 @@
 import Link from "next/link";
-import { 
-    ArrowUpRight, 
-    Code, 
-    ExternalLink, 
-    Guitar, 
-    Search, 
-    Gamepad2, 
-    Trophy, 
-    Terminal, // This was missing from your imports!
-    History, 
-    Ghost, 
-    Zap 
-} from "lucide-react";
+import { ArrowUpRight, Code, ExternalLink, Guitar, Search, Gamepad2, Trophy, Terminal, History, Ghost, Zap } from "lucide-react";
+
+export const metadata = {
+  title: 'Projects',
+  description: 'A showcase of my software engineering work and game development projects.',
+}
 
 const PROJECT_DATA = [
     {
@@ -25,7 +18,7 @@ const PROJECT_DATA = [
     },
     {
         name: "SapaMarket",
-        role: "Co-Founder / Creator",
+        role: "Founder / Creator",
         description: "A prediction market simulator for local school events. Gained hundreds of unique trades within the first few days of beta launch.",
         tags: ["PWA", "Real-time DB", "Social"],
         href: "https://sapamarket.com",
@@ -34,7 +27,7 @@ const PROJECT_DATA = [
     },
     {
         name: "Hiendguitar.com",
-        role: "Web Manager / Heir",
+        role: "Web Developer / Manager",
         description: "Managing the online presence of the largest guitar store in Southeast Asia, specializing in PRS and premium boutique instruments.",
         tags: ["Management", "SEO", "E-commerce"],
         href: "https://hiendguitar.com",
@@ -43,7 +36,7 @@ const PROJECT_DATA = [
     },
     {
         name: "USA2INDO",
-        role: "Creator / Architect",
+        role: "Web Developer / Architect",
         description: "Developed the import platform facilitating millions of dollars in total revenue for online USA to Indonesia commerce.",
         tags: ["Architecture", "Logistics", "FinTech"],
         href: "https://usa2indo.com",

@@ -1,4 +1,4 @@
-import { Music, Code2, Gamepad2, Guitar } from "lucide-react";
+import { Music, Code2, Guitar, BookOpen, Landmark } from "lucide-react";
 
 export default function About() {
     return (
@@ -30,6 +30,39 @@ export default function About() {
                     </p>
                     <div className="p-8 border-l-2 border-mid bg-mid/5 italic text-lg md:text-xl opacity-70">
                         &quot;I was once a game developer participating in game jams. My games look like sh*t. I will not further disclose this.&quot;
+                    </div>
+                </div>
+            </div>
+            {/* NEW: Economics & Philosophy Section */}
+            <div className="px-8 md:px-24 grid md:grid-cols-12 gap-12 mb-40">
+                <div className="md:col-span-4 flex flex-col gap-4">
+                    <div className="w-12 h-12 rounded-full bg-semilight flex items-center justify-center text-dark">
+                        <BookOpen size={24} />
+                    </div>
+                    <span className="uppercase tracking-[0.3em] text-sm text-semilight font-bold">The Economic Realist</span>
+                </div>
+                <div className="md:col-span-8 text-xl md:text-3xl font-light space-y-10 leading-relaxed">
+                    <p>
+                        Beyond software, I spend a rather unhealthy amount of time deep-diving into <span className="text-semilight font-medium">Libertarian Economics</span>. I prefer my logic decentralized and my markets free.
+                    </p>
+                    <div className="grid sm:grid-cols-2 gap-8 text-base md:text-xl opacity-80">
+                        <div className="space-y-4">
+                            <p>
+                                My worldview is shaped by the heavyweights: the Hayekian spontaneous order, Friedman&apos;s choice, and the brutal clarity of <span className="text-white font-medium">Thomas Sowell</span>. 
+                            </p>
+                            <p>
+                                From <span className="italic underline decoration-mid">Adam Smith&apos;s</span> invisible hand to the modern scholarship of the <span className="text-white font-medium">Hoover Institution</span>.
+                            </p>
+                        </div>
+                        <div className="bg-mid/10 p-6 rounded-2xl border border-mid/20 flex flex-col justify-center">
+                            <div className="flex items-center gap-3 mb-3 text-mid">
+                                <Landmark size={20} />
+                                <span className="text-xs font-bold uppercase tracking-widest">Intellectual Bias</span>
+                            </div>
+                            <p className="text-lg italic leading-snug">
+                                &quot;Chicago School of Economic thought enthusiast. I believe that every person should have control over their own lives, not surrender to the higher power of some authority.&quot;
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

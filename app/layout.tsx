@@ -19,16 +19,27 @@ export const metadata: Metadata = {
   authors: [{ name: "Jayden Kusuma" }],
   creator: "Jayden Kusuma",
   robots: "index, follow",
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: "Jayden Kusuma - Personal Website",
     description:
       "The official website of Jayden Kusuma, a tech enthusiast and musician. Discover personal projects, music, and more from the local guy in tech.",
-    url: "https://jdnkusuma.vercel.app",
+    url: "https://jaydenkusuma.vercel.app",
     type: "website",
     siteName: "Jaykus",
     images: [
       {
-        url: "https://media.licdn.com/dms/image/v2/D5616AQFmb6XykQhH-g/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1738745241361?e=1751500800&v=beta&t=zZmZW1a5KdJ3XAdvB2UpQ0Jj65uiIJ-H63P_DtWyXL0",
+        url: "og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Jaykus - Personal Website of Jayden Kusuma",
@@ -41,10 +52,10 @@ export const metadata: Metadata = {
     description:
       "The official website of Jayden Kusuma, a tech enthusiast and musician. Discover personal projects, music, and more.",
     images: [
-      "https://media.licdn.com/dms/image/v2/D5616AQFmb6XykQhH-g/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1738745241361?e=1751500800&v=beta&t=zZmZW1a5KdJ3XAdvB2UpQ0Jj65uiIJ-H63P_DtWyXL0",
+      "og-image.jpg",
     ],
   },
-  metadataBase: new URL("https://jdnkusuma.vercel.app"),
+  metadataBase: new URL("https://jaydenkusuma.vercel.app"),
 };
 
 // 2. Root Layout
@@ -72,7 +83,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Jayden Kusuma",
-              url: "https://jdnkusuma.vercel.app",
+              url: "https://jaydenkusuma.vercel.app",
               sameAs: [
                 "https://github.com/jdnkusuma",
                 "https://www.linkedin.com/in/jayden-kusuma-81670b238",
