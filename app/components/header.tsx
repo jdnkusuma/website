@@ -68,17 +68,20 @@ export default function Header() {
                     `}>
                         {/* Main Nav Links */}
                         <ul className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 text-4xl md:text-lg font-bold md:font-medium">
-                            {["home", "about", "projects", "contact"].map((item) => (
-                                <li key={item}>
-                                    <Link
-                                        href={item === "home" ? "/" : `/${item}`}
-                                        onClick={() => setIsOpen(false)}
-                                        className="capitalize hover:text-semilight transition-all md:border-b-2 border-transparent hover:border-semilight py-1 px-2"
-                                    >
-                                        {item}
-                                    </Link>
-                                </li>
-                            ))}
+                            {["home", "about", "projects", "blog", "contact"].map((item) => (
+                            <li key={item} className="relative group">
+                                <Link
+                                    href={item === "home" ? "/" : `/${item}`}
+                                    onClick={() => setIsOpen(false)}
+                                    className="capitalize hover:text-semilight transition-all md:border-b-2 border-transparent hover:border-semilight py-1 px-2 flex items-center gap-1"
+                                >
+                                    {item}
+                                    {item === 'blog' && (
+                                        <span className="h-1.5 w-1.5 rounded-full bg-semilight animate-pulse hidden md:block" />
+                                    )}
+                                </Link>
+                            </li>
+                        ))}
                         </ul>
                         
                         {/* Social Links - Mobile Only */}
