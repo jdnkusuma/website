@@ -4,61 +4,65 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Script from "next/script";
 
+// The Finalized Optimized Metadata
 export const metadata: Metadata = {
-  title: "Jayden Kusuma - Personal Website",
-  description:
-    "The official website of Jayden Kusuma, a tech enthusiast and musician. Discover personal projects, music, and more from the local guy in tech.",
+  // Use a cleaner title structure
+  title: {
+    default: "Jayden Kusuma | Software Engineer | Jakarta",
+    template: "%s | Jayden Kusuma"
+  },
+  description: "Official website of Jayden Kusuma: Software Engineer, tech enthusiast, and musician based in Jakarta. Exploring elegant solutions and crafting digital experiences.",
   keywords: [
     "Jayden Kusuma",
     "Jaykus",
-    "personal website",
-    "tech enthusiast",
-    "musician",
+    "Software Engineer Jakarta",
     "developer portfolio",
+    "React developer",
+    "Jakarta tech scene"
   ],
   authors: [{ name: "Jayden Kusuma" }],
   creator: "Jayden Kusuma",
   robots: "index, follow",
+  // Ensure these paths match the generated PNGs below
   icons: {
     icon: [
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
     ],
+    // This is the one Google focuses on for mobile
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
-  manifest: '/site.webmanifest',
+  // Ensure metadataBase is set for relative paths to work
+  metadataBase: new URL("https://jaydenkusuma.vercel.app"),
   openGraph: {
-    title: "Jayden Kusuma - Personal Website",
-    description:
-      "The official website of Jayden Kusuma, a tech enthusiast and musician. Discover personal projects, music, and more from the local guy in tech.",
+    title: "Jayden Kusuma - Software Engineer & Musician",
+    description: "Elegant code, compelling music, and personal projects from Jayden Kusuma's digital hub.",
     url: "https://jaydenkusuma.vercel.app",
     type: "website",
-    siteName: "Jaykus",
+    siteName: "Jayden Kusuma",
+    locale: "en_ID",
     images: [
       {
-        url: "og-image.jpg",
+        url: "/og-image.jpg", // The dynamic image below
         width: 1200,
         height: 630,
-        alt: "Jaykus - Personal Website of Jayden Kusuma",
+        alt: "Jayden Kusuma - Digital Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jayden Kusuma | Jaykus - Personal Website",
-    description:
-      "The official website of Jayden Kusuma, a tech enthusiast and musician. Discover personal projects, music, and more.",
+    title: "Jayden Kusuma | Jaykus - Personal Hub",
+    description: "Software engineering and music from Jayden Kusuma.",
     images: [
-      "og-image.jpg",
+      "/og-image.jpg", // Reusing the dynamic image
     ],
   },
-  metadataBase: new URL("https://jaydenkusuma.vercel.app"),
 };
 
-// 2. Root Layout
+// Root Layout (Remains as you wrote it, it was correct!)
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -67,13 +71,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* 3. Google Site Verification */}
         <meta
           name="google-site-verification"
           content="QK2YvKvDNfZ0lHlKjOPPvbL33Bxhde-70Z-XqMe66O8"
         />
-
-        {/* 4. JSON-LD Structured Data for Personal Schema */}
+        {/* The Schema Strategy 'afterInteractive' is a good move for performance */}
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -89,7 +91,8 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/jayden-kusuma-81670b238",
                 "https://instagram.com/jayden.kusuma",
               ],
-              jobTitle: "Tech Enthusiast & Musician",
+              // Explicit jobTitle for better Knowledge Graph recognition
+              jobTitle: "Software Engineer", 
             }),
           }}
         />

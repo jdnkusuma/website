@@ -38,6 +38,17 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
+@layer utilities {
+  .animate-loading-bar {
+    animation: loading-bar 1.5s infinite ease-in-out;
+  }
+
+  @keyframes loading-bar {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+  }
+}
 /* Glassmorphism for the header when stuck */
 header.stuck {
   background: rgba(126, 96, 191, 0.8);
