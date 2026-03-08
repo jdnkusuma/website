@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
       type: "article",
       publishedTime: post.publishedAt,
-      url: `https://jaydenkusuma.vercel.app/blog/${slug}`,
+      url: `https://jaydenkusuma.com/blog/${slug}`,
       images: [
         {
           url: post.mainImage?.asset?.url || "/og-image.jpg",
@@ -76,7 +76,7 @@ export default async function PostPage({ params }: Props) {
             "author": {
               "@type": "Person",
               "name": "Jayden Kusuma",
-              "url": "https://jaydenkusuma.vercel.app"
+              "url": "https://jaydenkusuma.com"
             }
           })
         }}

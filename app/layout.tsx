@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     ],
   },
   // Ensure metadataBase is set for relative paths to work
-  metadataBase: new URL("https://jaydenkusuma.vercel.app"),
+  metadataBase: new URL("https://jaydenkusuma.com"),
   openGraph: {
     title: "Jayden Kusuma - Software Engineer & Musician",
     description: "Elegant code, compelling music, and personal projects from Jayden Kusuma's digital hub.",
-    url: "https://jaydenkusuma.vercel.app",
+    url: "https://jaydenkusuma.com",
     type: "website",
     siteName: "Jayden Kusuma",
     locale: "en_ID",
@@ -85,7 +85,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Jayden Kusuma",
-              url: "https://jaydenkusuma.vercel.app",
+              url: "https://jaydenkusuma.com",
               sameAs: [
                 "https://github.com/jdnkusuma",
                 "https://www.linkedin.com/in/jayden-kusuma-81670b238",

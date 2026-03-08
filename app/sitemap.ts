@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { client } from "@/sanity/lib/client";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://jaydenkusuma.vercel.app'
+    const baseUrl = 'https://jaydenkusuma.com'
 
     // 1. Fetch all published blog slugs from Sanity
     const postsQuery = `*[_type == "post" && !(_id in path('drafts.**'))] { "slug": slug.current, _updatedAt }`;
