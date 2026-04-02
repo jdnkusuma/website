@@ -8,13 +8,13 @@ export default function QuickAbout() {
                 
                 <div className="grid md:grid-cols-2 gap-12">
                     <p className="text-xl md:text-3xl font-medium leading-relaxed">
-                        I&apos;m a tech enthusiast and musician. I enjoy exploring new software and 
+                        I&apos;m a software enthusiast and musician. I enjoy exploring new software, staying updated to recent tech news (thanks fireship) and 
                         <span className="text-semilight"> play music</span>. 
-                        From video games to betting sites, I build what I imagine.
+                        Video games, websites, mobile applications, I try to build everything I have an interest in.
                     </p>
                     <p className="text-lg md:text-2xl opacity-80 font-light flex items-end">
-                        This is my digital journal and portfolio, my space for showcasing my 
-                        coding and music projects.
+                        This website functions as my digital journal and portfolio, my space for showcasing my 
+                        projects.
                     </p>
                 </div>
             </div>

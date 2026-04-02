@@ -14,7 +14,7 @@ const PROJECT_DATA = [
         tags: ["Next.js", "Tailwind CSS", "CMS"],
         href: "https://andraramadhan.com",
         icon: Guitar,
-        image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&h=800&auto=format&fit=crop" 
+        image: "/andra-ramadhan.webp" 
     },
     {
         name: "SapaMarket",
@@ -32,7 +32,7 @@ const PROJECT_DATA = [
         tags: ["Management", "SEO", "E-commerce"],
         href: "https://hiendguitar.com",
         icon: Guitar,
-        image: "https://images.unsplash.com/photo-1550985543-f47f38aeee65?q=80&w=1200&h=800&auto=format&fit=crop"
+        image: "/hiendguitar.jpg"
     },
     {
         name: "USA2INDO",

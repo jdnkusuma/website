@@ -6,10 +6,10 @@ export default function About() {
             {/* Hero Heading - Overlapping Layout */}
             <div className="relative px-8 md:px-24 pt-20 mb-32">
                 <h1 className="text-8xl md:text-[12rem] font-black tracking-tighter leading-none opacity-10 absolute -top-10 left-8 select-none">
-                    IDENTITY
+                    ABOUT
                 </h1>
                 <h2 className="text-6xl md:text-9xl font-bold relative z-10 pt-10">
-                    who is <span className="text-semilight">jayden?</span>
+                    who is <span className="text-semilight">jayden...</span>
                 </h2>
             </div>
 
@@ -19,18 +19,15 @@ export default function About() {
                     <div className="w-12 h-12 rounded-full bg-mid flex items-center justify-center">
                         <Code2 size={24} />
                     </div>
-                    <span className="uppercase tracking-[0.3em] text-sm text-mid font-bold">The Software Engineer</span>
+                    <span className="uppercase tracking-[0.3em] text-sm text-mid font-bold">Software Engineer</span>
                 </div>
                 <div className="md:col-span-8 text-xl md:text-3xl font-light space-y-10 leading-relaxed">
                     <p>
-                        Hi, I&apos;m Jayden. A software engineer based in <span className="text-semilight font-medium">Jakarta</span>. I have a burning passion for crafting a great CV and appearing somewhat competent.
+                        Hi, I&apos;m Jayden. A software engineer based in <span className="text-semilight font-medium">Jakarta</span>. I have an interest in software and meticulously curate my LinkedIn profile to appear active.
                     </p>
                     <p className="opacity-80">
-                        I have experience in frontend development, though my designs are as beautiful as drying paint. Recently, I&apos;ve been descending into the <span className="italic">backend abyss</span>. 
+                        I have experience in both frontend and backend development, though my designs are as beautiful as drying paint. My backend code actually works rather well though, might have to dive deeper to that part...
                     </p>
-                    <div className="p-8 border-l-2 border-mid bg-mid/5 italic text-lg md:text-xl opacity-70">
-                        &quot;I was once a game developer participating in game jams. My games look like sh*t. I will not further disclose this.&quot;
-                    </div>
                 </div>
             </div>
             {/* NEW: Economics & Philosophy Section */}
@@ -39,16 +36,16 @@ export default function About() {
                     <div className="w-12 h-12 rounded-full bg-semilight flex items-center justify-center text-dark">
                         <BookOpen size={24} />
                     </div>
-                    <span className="uppercase tracking-[0.3em] text-sm text-semilight font-bold">The Economic Realist</span>
+                    <span className="uppercase tracking-[0.3em] text-sm text-semilight font-bold">Libertarian Economics</span>
                 </div>
                 <div className="md:col-span-8 text-xl md:text-3xl font-light space-y-10 leading-relaxed">
                     <p>
-                        Beyond software, I spend a rather unhealthy amount of time deep-diving into <span className="text-semilight font-medium">Libertarian Economics</span>. I prefer my logic decentralized and my markets free.
+                        I too spend time studying <span className="text-semilight font-medium">Libertarian Economics</span>. I find freedom to be an essential core of economic growth, and I advocate for a society where individuals have the liberty to pursue their own paths without excessive government interference. I also believe in people crafting their own futures; no one should decide how my life should go.
                     </p>
                     <div className="grid sm:grid-cols-2 gap-8 text-base md:text-xl opacity-80">
                         <div className="space-y-4">
                             <p>
-                                My worldview is shaped by the heavyweights: the Hayekian spontaneous order, Friedman&apos;s choice, and the brutal clarity of <span className="text-white font-medium">Thomas Sowell</span>. 
+                                My worldview is shaped by the essential libertarian economists: the Friedrich A. Hayek, Milton Friedman, and Thomas Sowell. 
                             </p>
                             <p>
                                 From <span className="italic underline decoration-mid">Adam Smith&apos;s</span> invisible hand to the modern scholarship of the <span className="text-white font-medium">Hoover Institution</span>.
@@ -97,7 +94,7 @@ export default function About() {
                             </p>
                             <p className="text-sm font-bold border-t border-light/20 pt-6 text-semilight">
                                 I have ALL the hi end guitars I could ever need, so trust me that whatever guitar I use has got to be the best.
-                                <span className="block mt-2 text-white italic">Yeah, be jealous of me</span>
+                                <span className="block mt-2 text-white italic">be jealous</span>
                             </p>
                         </div>
                     </div>
