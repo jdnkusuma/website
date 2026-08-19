@@ -16,9 +16,6 @@ export default function About() {
             {/* Tech & Engineering Section */}
             <div className="px-8 md:px-24 grid md:grid-cols-12 gap-12 mb-40">
                 <div className="md:col-span-4 flex flex-col gap-4">
-                    <div className="w-12 h-12 rounded-full bg-mid flex items-center justify-center">
-                        <Code2 size={24} />
-                    </div>
                     <span className="uppercase tracking-[0.3em] text-sm text-mid font-bold">Software Engineer</span>
                 </div>
                 <div className="md:col-span-8 text-xl md:text-3xl font-light space-y-10 leading-relaxed">
@@ -33,9 +30,6 @@ export default function About() {
             {/* NEW: Economics & Philosophy Section */}
             <div className="px-8 md:px-24 grid md:grid-cols-12 gap-12 mb-40">
                 <div className="md:col-span-4 flex flex-col gap-4">
-                    <div className="w-12 h-12 rounded-full bg-semilight flex items-center justify-center text-dark">
-                        <BookOpen size={24} />
-                    </div>
                     <span className="uppercase tracking-[0.3em] text-sm text-semilight font-bold">Libertarian Economics</span>
                 </div>
                 <div className="md:col-span-8 text-xl md:text-3xl font-light space-y-10 leading-relaxed">
@@ -67,11 +61,6 @@ export default function About() {
             {/* Music Section */}
             <div className="bg-light text-dark py-32 px-8 md:px-24">
                 <div className="max-w-7xl mx-auto">
-                    <div className="flex items-center gap-6 mb-12">
-                        <h2 className="text-6xl md:text-9xl font-black tracking-tighter">MUSIC</h2>
-                        <Guitar size={60} className="text-mid hidden md:block" />
-                    </div>
-
                     <div className="grid md:grid-cols-2 gap-16 items-start">
                         <div className="space-y-8 text-lg md:text-2xl font-medium">
                             <p>
@@ -85,16 +74,14 @@ export default function About() {
                         {/* The "Heir" Flex Box */}
                         <div className="bg-dark text-light p-10 rounded-[2rem] shadow-2xl transform md:rotate-2 hover:rotate-0 transition-transform duration-500">
                             <div className="flex items-center gap-4 mb-6 text-semilight">
-                                <Music size={24} />
                                 <span className="uppercase tracking-widest font-bold text-xs">Industry Access</span>
                             </div>
-                            <h3 className="text-3xl font-bold mb-4">The Hiendguitar Legacy</h3>
+                            <h3 className="text-3xl font-bold mb-4">Hiendguitar</h3>
                             <p className="text-lg opacity-80 leading-relaxed mb-6">
-                                As the heir to Hiendguitar, I have unlimited access to the local music industry and the top guitars ever made. 
+                                As the heir to Hiendguitar, I have unlimited access to all hi end guitars of the world.
                             </p>
                             <p className="text-sm font-bold border-t border-light/20 pt-6 text-semilight">
                                 I have ALL the hi end guitars I could ever need, so trust me that whatever guitar I use has got to be the best.
-                                <span className="block mt-2 text-white italic">be jealous</span>
                             </p>
                         </div>
                     </div>

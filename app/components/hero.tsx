@@ -8,8 +8,8 @@ export default function Hero() {
                     hello <br/> <span className="text-semilight">world</span>
                 </h1>
                 <p className="text-xl md:text-2xl font-light mb-10 max-w-2xl opacity-90">
-                    I'm <span className="font-bold border-b-2 border-mid">Jayden Kusuma</span>. 
-                    Building digital experiences and crafting melodies from my bedroom studio.
+                    This is <span className="font-bold border-b-2 border-mid">Jayden Kusuma</span>. 
+                    I build websites, mobile applications, create content, and play music.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link href="/projects" className="bg-mid hover:bg-semilight text-light hover:text-dark font-bold py-4 px-10 rounded-full transition-all duration-300 text-center">
